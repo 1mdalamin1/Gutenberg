@@ -1,5 +1,3 @@
-# Gutenberg 
-1. My Block theme [Link here](https://github.com/1mdalamin1/Gutenberg).
 === My CTA ===
 Contributors:      The WordPress Contributors
 Tags:              block
@@ -60,41 +58,31 @@ Done: WordPress plugin My CTA bootstrapped in the D:\laragon\www\map\wp-content\
 
 You can run several commands inside:
 
-# Starts the build for development.
-```shell
-npm start
-```
-  # Builds the code for production.
-```shell
-npm run build
-```
-  # Formats files.
-```shell
-npm run format
-```
-  # Lints CSS files.
-```shell
-npm run lint:css
-```
-  # Lints JavaScript files.
-```shell
-npm run lint:js
-```
-  # Creates a zip file for a WordPress plugin.
-```shell
-npm run plugin-zip
-```
-  # Updates WordPress packages to the latest version.
-```shell
-npm run packages-update
-```
+  $ npm start
+    Starts the build for development.
 
-# To enter the directory type:
-```shell
-cd tanvir-block
-```
-# You can start development with:
-```shell
-npm start
-```
- 
+  $ npm run build
+    Builds the code for production.
+
+  $ npm run format
+    Formats files.
+
+  $ npm run lint:css
+    Lints CSS files.
+
+  $ npm run lint:js
+    Lints JavaScript files.
+
+  $ npm run plugin-zip
+    Creates a zip file for a WordPress plugin.
+
+  $ npm run packages-update
+    Updates WordPress packages to the latest version.
+
+To enter the directory type:
+
+  $ cd tanvir-block
+
+You can start development with:
+
+  $ npm start
