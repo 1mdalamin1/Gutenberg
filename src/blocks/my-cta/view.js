@@ -21,5 +21,5 @@
  */
 
 /* eslint-disable no-console */
-console.log( 'Hello World! (from create-block-tanvir-block block)' );
+console.log( 'Hello World! (from tanvir-block-tanvir-block block)' );
 /* eslint-enable no-console */

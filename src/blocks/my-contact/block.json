@@ -1,0 +1,86 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tanvir-blocks/my-contact",
+  "version": "0.1.0",
+  "title": "My Contact",
+  "category": "tanvirblocks",
+  "description": "My Contact is Contact block scaffolded with Create Block tool.",
+  "example": {},
+  "supports": {
+    "html": true,
+    "align": true,
+    "color": {
+      "gradients": true,
+      "link": true,
+      "custom": true,
+      "text": true,
+      "background": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "letterSpacing": true,
+      "fontFamily": true,
+      "textTransform": true,
+      "fontStyle": true,
+      "fontWeight": true
+    },
+    "customClassName": true,
+    "className": true,
+    "anchor": true
+  },
+  "textdomain": "tanvir-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "titletext": {
+      "type": "string",
+      "selector": "h2",
+      "default": "Join Our Newsletter",
+      "source": "text"
+    },
+    "descriptiontext": {
+      "type": "string",
+      "selector": "p",
+      "default": "Subscribe to our Newsletter",
+      "source": "html"
+    },
+    "btntext": {
+      "type": "string",
+      "selector": "button",
+      "default": "Contact Us",
+      "source": "text"
+    },
+    "list_id": {
+      "type": "string",
+      "default": "123456"
+    },
+    "doubleoption": {
+      "type": "boolean",
+      "default": false
+    },
+    "switch_option": {
+      "type": "boolean",
+      "default": false
+    },
+    "bg_image": {
+      "type": "object",
+      "default": {
+        "id": 0
+      }
+    },
+    "image": {
+      "type": "object",
+      "default": {
+        "id": 0
+      }
+    }
+  }
+}
