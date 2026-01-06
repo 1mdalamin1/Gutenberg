@@ -2,7 +2,7 @@
 /**
  * Title: Audio format
  * Slug: virza/format-audio
- * Categories: twentytwentyfive_post-format
+ * Categories: virza_post-format
  * Description: An audio post format with an image, title, audio player, and description.
  *
  * @package WordPress

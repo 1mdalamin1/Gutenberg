@@ -2,7 +2,7 @@
 /**
  * Title: Shop homepage
  * Slug: virza/page-shop-home
- * Categories: twentytwentyfive_page
+ * Categories: virza_page
  * Keywords: starter
  * Block Types: core/post-content
  * Post Types: page, wp_template

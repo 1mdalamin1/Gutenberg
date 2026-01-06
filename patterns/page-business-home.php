@@ -2,7 +2,7 @@
 /**
  * Title: Business homepage
  * Slug: virza/page-business-home
- * Categories: twentytwentyfive_page, featured
+ * Categories: virza_page, featured
  * Keywords: starter
  * Block Types: core/post-content
  * Post Types: page, wp_template

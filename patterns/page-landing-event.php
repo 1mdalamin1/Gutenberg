@@ -2,7 +2,7 @@
 /**
  * Title: Landing page for event
  * Slug: virza/page-landing-event
- * Categories: twentytwentyfive_page, featured
+ * Categories: virza_page, featured
  * Keywords: starter
  * Block Types: core/post-content
  * Post Types: page, wp_template

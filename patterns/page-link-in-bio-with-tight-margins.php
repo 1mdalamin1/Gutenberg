@@ -2,7 +2,7 @@
 /**
  * Title: Link in bio with tight margins
  * Slug: virza/page-link-in-bio-with-tight-margins
- * Categories: twentytwentyfive_page, banner
+ * Categories: virza_page, banner
  * Keywords: starter
  * Block Types: core/post-content
  * Post Types: page, wp_template

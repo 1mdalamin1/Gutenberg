@@ -2,7 +2,7 @@
 /**
  * Title: CV/bio
  * Slug: virza/page-cv-bio
- * Categories: twentytwentyfive_page, about, featured
+ * Categories: virza_page, about, featured
  * Keywords: starter
  * Block Types: core/post-content
  * Viewport width: 1400

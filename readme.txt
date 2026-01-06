@@ -1,88 +1,44 @@
-=== My CTA ===
-Contributors:      The WordPress Contributors
-Tags:              block
-Tested up to:      6.7
-Stable tag:        0.1.0
-License:           GPL-2.0-or-later
-License URI:       https://www.gnu.org/licenses/gpl-2.0.html
-
-Example block scaffolded with Create Block tool.
+=== Vir Za ===
+Contributors: wordpressdotorg
+Requires at least: 6.7
+Tested up to: 6.9
+Requires PHP: 7.2
+Stable tag: 1.4
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-This is the long description. No limit, and you can use Markdown (as well as in the following sections).
+Vir Za emphasizes simplicity and adaptability. It offers flexible design options, supported by a variety of patterns for different page types, such as services and landing pages, making it ideal for building personal blogs, professional portfolios, online magazines, or business websites. Its templates cater to various blog styles, from text-focused to image-heavy layouts. Additionally, it supports international typography and diverse color palettes, ensuring accessibility and customization for users worldwide.
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
-
-== Installation ==
-
-This section describes how to install the plugin and get it working.
-
-e.g.
-
-1. Upload the plugin files to the `/wp-content/plugins/tanvir-block` directory, or install the plugin through the WordPress plugins screen directly.
-1. Activate the plugin through the 'Plugins' screen in WordPress
-
-
-== Frequently Asked Questions ==
-
-= A question that someone might have =
-
-An answer to that question.
-
-= What about foo bar? =
-
-Answer to foo bar dilemma.
-
-== Screenshots ==
-
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
 
 == Changelog ==
 
-= 0.1.0 =
-* Release
+= 1.4 =
+* Released: December 2, 2025
 
-== Arbitrary section ==
+https://github.com/1mdalamin1/Gutenberg/tree/virza-block-theme
 
-You may provide arbitrary sections, in the same format as the ones above. This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation." Arbitrary sections will be shown below the built-in sections outlined above.
 
-Done: WordPress plugin My CTA bootstrapped in the D:\laragon\www\map\wp-content\plugins\tanvir-block directory.
+== Copyright ==
 
-You can run several commands inside:
+Vir Za WordPress Theme, (C) 2024-2025 WordPress.org and contributors.
+Vir Za is distributed under the terms of the GNU GPL.
 
-  $ npm start
-    Starts the build for development.
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
 
-  $ npm run build
-    Builds the code for production.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
 
-  $ npm run format
-    Formats files.
+This theme incorporates code from:
 
-  $ npm run lint:css
-    Lints CSS files.
+License: GPLv2 or later. License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-  $ npm run lint:js
-    Lints JavaScript files.
 
-  $ npm run plugin-zip
-    Creates a zip file for a WordPress plugin.
+This theme bundles the following third-party resources:
 
-  $ npm run packages-update
-    Updates WordPress packages to the latest version.
-
-To enter the directory type:
-
-  $ cd tanvir-block
-
-You can start development with:
-
-  $ npm start

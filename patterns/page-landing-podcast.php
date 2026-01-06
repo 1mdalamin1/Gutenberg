@@ -2,7 +2,7 @@
 /**
  * Title: Landing page for podcast
  * Slug: virza/page-landing-podcast
- * Categories: twentytwentyfive_page, featured
+ * Categories: virza_page, featured
  * Keywords: starter
  * Block Types: core/post-content
  * Post Types: page, wp_template

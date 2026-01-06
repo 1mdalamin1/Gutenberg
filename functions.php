@@ -10,7 +10,7 @@
  */
 
 // Adds theme support for post formats.
-if ( ! function_exists( 'twentytwentyfive_post_format_setup' ) ) :
+if ( ! function_exists( 'virza_post_format_setup' ) ) :
 	/**
 	 * Adds theme support for post formats.
 	 *
@@ -18,14 +18,14 @@ if ( ! function_exists( 'twentytwentyfive_post_format_setup' ) ) :
 	 *
 	 * @return void
 	 */
-	function twentytwentyfive_post_format_setup() {
+	function virza_post_format_setup() {
 		add_theme_support( 'post-formats', array( 'aside', 'audio', 'chat', 'gallery', 'image', 'link', 'quote', 'status', 'video' ) );
 	}
 endif;
-add_action( 'after_setup_theme', 'twentytwentyfive_post_format_setup' );
+add_action( 'after_setup_theme', 'virza_post_format_setup' );
 
 // Enqueues editor-style.css in the editors.
-if ( ! function_exists( 'twentytwentyfive_editor_style' ) ) :
+if ( ! function_exists( 'virza_editor_style' ) ) :
 	/**
 	 * Enqueues editor-style.css in the editors.
 	 *
@@ -33,14 +33,14 @@ if ( ! function_exists( 'twentytwentyfive_editor_style' ) ) :
 	 *
 	 * @return void
 	 */
-	function twentytwentyfive_editor_style() {
+	function virza_editor_style() {
 		add_editor_style( 'assets/css/editor-style.css' );
 	}
 endif;
-add_action( 'after_setup_theme', 'twentytwentyfive_editor_style' );
+add_action( 'after_setup_theme', 'virza_editor_style' );
 
 // Enqueues the theme stylesheet on the front.
-if ( ! function_exists( 'twentytwentyfive_enqueue_styles' ) ) :
+if ( ! function_exists( 'virza_enqueue_styles' ) ) :
 	/**
 	 * Enqueues the theme stylesheet on the front.
 	 *
@@ -48,7 +48,7 @@ if ( ! function_exists( 'twentytwentyfive_enqueue_styles' ) ) :
 	 *
 	 * @return void
 	 */
-	function twentytwentyfive_enqueue_styles() {
+	function virza_enqueue_styles() {
 		$suffix = SCRIPT_DEBUG ? '' : '.min';
 		$src    = 'style' . $suffix . '.css';
 
@@ -65,10 +65,10 @@ if ( ! function_exists( 'twentytwentyfive_enqueue_styles' ) ) :
 		);
 	}
 endif;
-add_action( 'wp_enqueue_scripts', 'twentytwentyfive_enqueue_styles' );
+add_action( 'wp_enqueue_scripts', 'virza_enqueue_styles' );
 
 // Registers custom block styles.
-if ( ! function_exists( 'twentytwentyfive_block_styles' ) ) :
+if ( ! function_exists( 'virza_block_styles' ) ) :
 	/**
 	 * Registers custom block styles.
 	 *
@@ -76,7 +76,7 @@ if ( ! function_exists( 'twentytwentyfive_block_styles' ) ) :
 	 *
 	 * @return void
 	 */
-	function twentytwentyfive_block_styles() {
+	function virza_block_styles() {
 		register_block_style(
 			'core/list',
 			array(
@@ -94,10 +94,10 @@ if ( ! function_exists( 'twentytwentyfive_block_styles' ) ) :
 		);
 	}
 endif;
-add_action( 'init', 'twentytwentyfive_block_styles' );
+add_action( 'init', 'virza_block_styles' );
 
 // Registers pattern categories.
-if ( ! function_exists( 'twentytwentyfive_pattern_categories' ) ) :
+if ( ! function_exists( 'virza_pattern_categories' ) ) :
 	/**
 	 * Registers pattern categories.
 	 *
@@ -105,10 +105,10 @@ if ( ! function_exists( 'twentytwentyfive_pattern_categories' ) ) :
 	 *
 	 * @return void
 	 */
-	function twentytwentyfive_pattern_categories() {
+	function virza_pattern_categories() {
 
 		register_block_pattern_category(
-			'twentytwentyfive_page',
+			'virza_page',
 			array(
 				'label'       => __( 'Pages', 'virza' ),
 				'description' => __( 'A collection of full page layouts.', 'virza' ),
@@ -116,7 +116,7 @@ if ( ! function_exists( 'twentytwentyfive_pattern_categories' ) ) :
 		);
 
 		register_block_pattern_category(
-			'twentytwentyfive_post-format',
+			'virza_post-format',
 			array(
 				'label'       => __( 'Post formats', 'virza' ),
 				'description' => __( 'A collection of post format patterns.', 'virza' ),
@@ -124,10 +124,10 @@ if ( ! function_exists( 'twentytwentyfive_pattern_categories' ) ) :
 		);
 	}
 endif;
-add_action( 'init', 'twentytwentyfive_pattern_categories' );
+add_action( 'init', 'virza_pattern_categories' );
 
 // Registers block binding sources.
-if ( ! function_exists( 'twentytwentyfive_register_block_bindings' ) ) :
+if ( ! function_exists( 'virza_register_block_bindings' ) ) :
 	/**
 	 * Registers the post format block binding source.
 	 *
@@ -135,20 +135,20 @@ if ( ! function_exists( 'twentytwentyfive_register_block_bindings' ) ) :
 	 *
 	 * @return void
 	 */
-	function twentytwentyfive_register_block_bindings() {
+	function virza_register_block_bindings() {
 		register_block_bindings_source(
 			'virza/format',
 			array(
 				'label'              => _x( 'Post format name', 'Label for the block binding placeholder in the editor', 'virza' ),
-				'get_value_callback' => 'twentytwentyfive_format_binding',
+				'get_value_callback' => 'virza_format_binding',
 			)
 		);
 	}
 endif;
-add_action( 'init', 'twentytwentyfive_register_block_bindings' );
+add_action( 'init', 'virza_register_block_bindings' );
 
 // Registers block binding callback function for the post format name.
-if ( ! function_exists( 'twentytwentyfive_format_binding' ) ) :
+if ( ! function_exists( 'virza_format_binding' ) ) :
 	/**
 	 * Callback function for the post format name block binding source.
 	 *
@@ -156,7 +156,7 @@ if ( ! function_exists( 'twentytwentyfive_format_binding' ) ) :
 	 *
 	 * @return string|void Post format name, or nothing if the format is 'standard'.
 	 */
-	function twentytwentyfive_format_binding() {
+	function virza_format_binding() {
 		$post_format_slug = get_post_format();
 
 		if ( $post_format_slug && 'standard' !== $post_format_slug ) {
